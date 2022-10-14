@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import './App.css';
 import CountryList from './components/layouts/CountryList';
@@ -10,9 +10,10 @@ import { filter } from './utils/reusableFunctions/filter';
 
 function App() {
   const view = useSelector(state => state.countryList)
-  const filters = useSelector(state => state.filters.filter)
+  const filterState = useSelector(state => state.filters.filter)
 
   const dispatch = useDispatch()
+  
   useEffect(() => {
     apiAllCountries()
     .then(
@@ -28,7 +29,9 @@ function App() {
     <div className="App">
       <Header />
       <Filters />
-      <CountryList view={view.filter((country) => filter(filters, country))} />
+      <CountryList view={
+        view.filter((country) => filter(filterState, country))
+      } />
     </div>
   );
 }

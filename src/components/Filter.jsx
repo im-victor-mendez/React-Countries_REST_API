@@ -4,7 +4,7 @@ import { v4 as key } from "uuid";
 import { setFilter } from '../stateManagement/filterSlice';
 
 
-function Filter({values}) {
+function Filter({filters}) {
   const dispatch = useDispatch()
   
   return <select
@@ -19,8 +19,8 @@ function Filter({values}) {
   }>
     <option defaultValue={'Filter by Region'}>Filter by Region</option>
     {
-        values.map(
-            value => <option key={key()} value={value}>{value}</option>
+        filters.map(
+            filter => <option key={key()} value={filter}>{filter}</option>
         )
     }
   </select>

@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { apiAllCountries } from '../../utils/apiFunctions'
 import Filter from '../Filter'
 
-const values = ['Africa', 'Europe']
+var filters = []
 
 function Filters() {
+  useEffect(() => {
+    apiAllCountries()
+    .then(
+      data => {
+        data.map(
+          country => {
+            filters.push(country.region)
+          }
+        )
+      }
+    )
+  }, [])
+  filters = Array.from(new Set(filters))
+  
   return <section id='filters'>
-    <Filter values={values} />
+    <Filter filters={filters} />
   </section>
 }
 
