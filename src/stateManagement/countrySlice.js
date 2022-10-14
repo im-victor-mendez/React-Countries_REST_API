@@ -8,11 +8,7 @@ const countrySlice = createSlice(
         initialState,
         reducers: {
             setList: (state, action) => {
-                action.payload.map(
-                    country => {
-                        state.push(country)
-                    }
-                )
+                return action.payload
             }
         }
     }

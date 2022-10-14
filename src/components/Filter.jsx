@@ -1,8 +1,22 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
 import { v4 as key } from "uuid";
+import { setFilter } from '../stateManagement/filterSlice';
+
 
 function Filter({values}) {
-  return <select name="filter" id="filter">
+  const dispatch = useDispatch()
+  
+  return <select
+  name="filter"
+  id="filter"
+  onChange={
+    e => dispatch(
+      setFilter(
+        e.target.value
+      )
+    )
+  }>
     <option defaultValue={'Filter by Region'}>Filter by Region</option>
     {
         values.map(

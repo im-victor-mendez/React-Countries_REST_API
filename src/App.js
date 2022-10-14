@@ -6,11 +6,13 @@ import Filters from './components/layouts/Filters';
 import Header from './components/layouts/Header';
 import { setList } from './stateManagement/countrySlice';
 import { apiAllCountries } from './utils/apiFunctions';
+import { filter } from './utils/reusableFunctions/filter';
 
 function App() {
   const view = useSelector(state => state.countryList)
+  const filters = useSelector(state => state.filters.filter)
+
   const dispatch = useDispatch()
-  
   useEffect(() => {
     apiAllCountries()
     .then(
@@ -26,7 +28,7 @@ function App() {
     <div className="App">
       <Header />
       <Filters />
-      <CountryList view={view} />
+      <CountryList view={view.filter((country) => filter(filters, country))} />
     </div>
   );
 }

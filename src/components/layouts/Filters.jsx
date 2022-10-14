@@ -1,7 +1,7 @@
 import React from 'react'
 import Filter from '../Filter'
 
-const values = ['1']
+const values = ['Africa', 'Europe']
 
 function Filters() {
   return <section id='filters'>
