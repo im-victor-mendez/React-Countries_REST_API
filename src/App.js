@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import CountryList from './components/layouts/CountryList';
+import Filters from './components/layouts/Filters';
 import Header from './components/layouts/Header';
 import { apiAllCountries } from './utils/apiFunctions';
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Filters />
       <CountryList view={view} />
     </div>
   );
