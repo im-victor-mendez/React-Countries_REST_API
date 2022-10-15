@@ -1,3 +1,4 @@
+import '../styles/Countries.scss'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import CountryList from '../components/layouts/CountryList'

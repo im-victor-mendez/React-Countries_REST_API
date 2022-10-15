@@ -1,3 +1,4 @@
+import '../../styles/CountryList.scss'
 import React from 'react'
 import Country from '../Country'
 import { v4 as key } from "uuid";

@@ -1,3 +1,4 @@
+import '../styles/Country.scss'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import CountryData from './CountryData'

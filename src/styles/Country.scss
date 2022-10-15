@@ -1,0 +1,26 @@
+.country {
+    background-color: var(--dark-mode-element-background);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    * {
+        margin: 0%;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .data {
+        display: flex;
+        gap: 5px;
+        //padding: 0rem 0.5rem;
+    }
+}
