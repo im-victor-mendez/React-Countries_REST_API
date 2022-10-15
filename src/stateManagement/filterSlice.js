@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    filter: 'Filter by Region'
+    filter: 'Filter by Region',
+    search: ''
 }
 
 const filterSlice = createSlice(
@@ -10,12 +11,21 @@ const filterSlice = createSlice(
         initialState,
         reducers: {
             setFilter: (state, action) => {
-                state.filter = action.payload
+                return {
+                    ...state,
+                    filter: action.payload
+                }
+            },
+            setSearch: (state, action) => {
+                return {
+                    ...state,
+                    search: action.payload
+                }
             }
         }
     }
 )
 
-export const { setFilter } = filterSlice.actions
+export const { setFilter, setSearch } = filterSlice.actions
 
 export default filterSlice
