@@ -1,3 +1,5 @@
+import './consts/colors.scss'
+import './consts/fonts.scss'
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import './App.css';
