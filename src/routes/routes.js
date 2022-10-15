@@ -1,4 +1,5 @@
 import Countries from "../views/Countries";
+import CountryDetails from "../views/CountryDetails";
 
 const routes = [
     /*
@@ -12,7 +13,12 @@ const routes = [
         name: 'Countries',
         path: '',
         element: <Countries />
-    }
+    },
+    {
+        name: '',
+        path: ':country',
+        element: <CountryDetails />
+    },
 ]
 
 export default routes
