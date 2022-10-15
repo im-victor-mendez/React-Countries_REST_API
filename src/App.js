@@ -9,8 +9,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/*
-      */}
       <Routes>
         {
           routes.map(
@@ -20,14 +18,6 @@ function App() {
           )
         }
       </Routes>
-      {/*
-      <Filters />
-      <CountryList view={
-        view
-        .filter((country) => search(filterStore.search, country))
-        .filter((country) => filter(filterStore.filter, country))
-      } />
-      */}
     </div>
   );
 }

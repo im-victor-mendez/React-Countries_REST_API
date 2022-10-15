@@ -3,12 +3,11 @@ import { useSelector } from 'react-redux';
 import { useParams } from "react-router-dom";
 
 function CountryDetails() {
-    const countryList = useSelector(state => state.countryList)
     const params = useParams()
-    const country = countryList.find(
+    const country = useSelector(state => state.countryList).find(
         country => {
             if(country.name.common == params.country)
-            return country
+                return country
         }
     )
 
