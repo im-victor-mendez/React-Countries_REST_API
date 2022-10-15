@@ -1,3 +1,4 @@
+import '../../styles/Filters.scss'
 import React, { useEffect } from 'react'
 import { apiAllCountries } from '../../utils/apiFunctions'
 import Filter from '../Filter'

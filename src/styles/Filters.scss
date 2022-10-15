@@ -1,0 +1,17 @@
+#filters {
+    display: flex;
+    justify-content: space-between;
+    * {
+        background-color: var(--dark-mode-element-background);
+        color: white;
+        padding: 1rem;
+        border: 0px;
+        border-radius: 0.5rem;
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            border: 0px;
+
+        }
+    }
+}
