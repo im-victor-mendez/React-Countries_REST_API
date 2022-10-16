@@ -15,12 +15,20 @@
 
         img {
             width: 100%;
+            border-radius: 0.5rem 0.5rem 0rem 0rem;
+        }
+
+        h1 {
+            margin-left: 1rem;
         }
     }
 
     .data {
         display: flex;
+        margin: 0rem 1rem;
         gap: 5px;
-        //padding: 0rem 0.5rem;
     }
+
+    height: max-content;
+    padding-bottom: 0.5rem;
 }

@@ -1,5 +1,9 @@
 #country-list {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 20% 20% 20% 20%;
     gap: 2rem;
+    height: 70vh;
+    overflow: hidden auto;
+    justify-items: center;
+    justify-content: space-between;
 }
