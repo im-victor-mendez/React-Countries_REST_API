@@ -7,3 +7,9 @@ export async function apiAllCountries() {
     const data = await response.json()
     return data
 }
+
+export async function apiCountryByName({name}) {
+    const response = await fetch(`${api}name/${name}`)
+    const data = await response.json()
+    return data
+}
