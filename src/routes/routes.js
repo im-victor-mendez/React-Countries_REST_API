@@ -1,3 +1,4 @@
+import BackButton from "../components/common/BackButton";
 import Countries from "../views/Countries";
 import CountryDetails from "../views/CountryDetails";
 
@@ -17,7 +18,10 @@ const routes = [
     {
         name: '',
         path: ':country',
-        element: <CountryDetails />
+        element: [
+            <BackButton />,
+            <CountryDetails />
+        ]
     },
 ]
 
