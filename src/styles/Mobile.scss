@@ -1,0 +1,35 @@
+@media (max-width: 500px) {
+    .App {
+        padding-bottom: 3rem;
+    }
+
+    #header {
+        padding: 0%;
+        justify-content: space-around;
+    }
+
+    #countries {
+        #filters {
+            flex-direction: column;
+            align-items: baseline;
+
+            gap: 1rem;
+
+            #search {
+                width: 100%;
+            }
+        }
+
+        #country-list {
+            grid-template-columns: auto;
+        }
+    }
+
+    .country-details {
+        grid-template-columns: auto;
+
+        .details {
+            grid-template-columns: auto;
+        }
+    }
+}

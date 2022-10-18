@@ -1,5 +1,6 @@
 import './consts/colors.scss'
 import './consts/fonts.scss'
+import './styles/Mobile.scss'
 import './App.css';
 import Header from './components/layouts/Header';
 import { Routes, Route } from "react-router-dom";
