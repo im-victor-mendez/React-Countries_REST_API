@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from "react-router-dom";
 import Border from '../components/common/Border';
 import { apiCountryByName, apiLanguage } from '../utils/apiFunctions';
+import Loading from '../components/common/Loading';
 
 function CountryDetails() {
     const params = useParams()
@@ -23,7 +24,7 @@ function CountryDetails() {
       )
     }, [])
 
-    return country === undefined ? <>Loading...</> : <section id={`${params.country}`} className='country-details'>
+    return country === undefined ? <Loading /> : <section id={`${params.country}`} className='country-details'>
         <img src={`${country.flags.png}`} alt="" />
         <div className='text'>
             <h1>{country.name.common}</h1>

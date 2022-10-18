@@ -1,5 +1,5 @@
 #header {
-    background-color: var(--dark-mode-element-background);
+    background-color: var(--light-mode-element-background);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,5 +9,25 @@
     #toggle-theme {
         display: flex;
         align-items: center;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+        background-color: transparent;
+        border: 0px;
+    }
+}
+
+#App.dark {
+    #header {
+        background-color: var(--dark-mode-element-background);
+        
+        .material-symbols-outlined {
+            color: white;    
+        }
     }
 }

@@ -1,5 +1,5 @@
 .country {
-    background-color: var(--dark-mode-element-background);
+    background-color: var(--light-mode-element-background);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
 
     a {
         text-decoration: none;
-        color: white;
+        color: var(--light-mode-text);
 
         img {
             width: 100%;
@@ -31,4 +31,13 @@
 
     height: max-content;
     padding-bottom: 0.5rem;
+}
+
+#App.dark {
+    .country {
+        background-color: var(--dark-mode-element-background);
+        a {
+            color: white;
+        }
+    }
 }

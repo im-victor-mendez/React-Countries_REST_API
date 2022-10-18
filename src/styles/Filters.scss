@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     * {
-        background-color: var(--dark-mode-element-background);
-        color: white;
+        background-color: var(--light-mode-element-background);
+        color: var(--light-mode-text);
         padding: 1rem;
         border: 0px;
         border-radius: 0.5rem;
@@ -12,6 +12,15 @@
         &:focus-within {
             border: 0px;
 
+        }
+    }
+}
+
+#App.dark {
+    #filters {
+        * {
+            background-color: var(--dark-mode-element-background);
+            color: white;
         }
     }
 }

@@ -1,5 +1,5 @@
 .country-details {
-    background-color: var(--dark-mode-background);
+    background-color: var(--light-mode-background);
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -31,5 +31,11 @@
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+    }
+}
+
+#App.dark {
+    .country-details {
+        background-color: var(--dark-mode-background);
     }
 }

@@ -1,6 +1,5 @@
 .back-button {
-    background-color: var(--dark-mode-element-background);
-    color: white;
+    background-color: var(--light-mode-element-background);
     text-decoration: none;
 
     display: flex;
@@ -11,4 +10,11 @@
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     margin: 0rem 3rem;
+}
+
+#App.dark {
+    .back-button {
+        background-color: var(--dark-mode-element-background);
+        color: white;
+    }
 }

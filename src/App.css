@@ -1,11 +1,15 @@
 .App {
-    background-color: var(--dark-mode-background);
+    background-color: var(--light-mode-background);
     font-family: var(--nunito-sans-font-family);
-    color: white;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
     
     height: 100vh;
+}
+
+.App.dark {
+    background-color: var(--dark-mode-background);
+    color: white;
 }

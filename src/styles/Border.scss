@@ -1,4 +1,10 @@
 .border {
-    background-color: var(--dark-mode-element-background);
+    background-color: var(--light-mode-element-background);
     padding: 0rem 1rem;
+}
+
+#App.dark {
+    .border {
+        background-color: var(--dark-mode-element-background);
+    }
 }
