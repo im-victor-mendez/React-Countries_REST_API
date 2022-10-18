@@ -1,4 +1,12 @@
-@media (max-width: 500px) {
+@media (max-width: 870px) {
+    #countries {
+        #country-list {
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+@media (max-width: 600px) {
     .App {
         padding-bottom: 3rem;
     }
