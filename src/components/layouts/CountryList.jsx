@@ -1,6 +1,6 @@
-import '../../styles/CountryList.scss'
+import '../../styles/components/layouts/CountryList.scss'
 import React from 'react'
-import Country from '../Country'
+import Country from '../common/Country'
 import { v4 as key } from "uuid";
 import Loading from '../common/Loading';
 

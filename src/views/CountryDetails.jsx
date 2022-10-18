@@ -1,9 +1,8 @@
-import '../styles/CountryDetails.scss'
+import '../styles/views/CountryDetails.scss'
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
 import { useParams } from "react-router-dom";
 import Border from '../components/common/Border';
-import { apiCountryByName, apiLanguage } from '../utils/apiFunctions';
+import { apiCountryByName } from '../utils/apiFunctions';
 import Loading from '../components/common/Loading';
 
 function CountryDetails() {
@@ -29,7 +28,6 @@ function CountryDetails() {
         <div className='text'>
             <h1>{country.name.common}</h1>
             <div className='details'>
-                {/* To check isl */}
                 <h2>Native Name: {
                     languages.map(
                         language => country.name.nativeName[language].common
@@ -38,24 +36,19 @@ function CountryDetails() {
                 <h2>Population: {country.population}</h2>
                 <h2>Region: {country.region}</h2>
                 <h2>Sub Region: {country.subregion}</h2>
-                {/* To check capital */}
                 <h2>Capital: {country.capital}</h2>
-                {/* To check tld */}
                 <h2>Top Level Domain: {country.tld}</h2>
-                {/* To check ISK */}
                 <h2>Currencies: {
                     currencies.map(
                         currency => country.currencies[currency].name
                     )
                 }</h2>
-                {/* To check isl */}
                 <h2>Languages: {
                     languages.map(
                         language => country.languages[language] + ' '
                     )
                 }</h2>
             </div>
-            {/* To check */}
             {
                 country.borders != undefined ?
                 <h2 className='borders'>Border Countries: {

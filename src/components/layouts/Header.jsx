@@ -1,18 +1,13 @@
-import '../../styles/Header.scss'
+import '../../styles/components/layouts/Header.scss'
 import React, { useState } from 'react'
 
 function Header() {
   const [mode, setMode] = useState(false)
 
   function handleDarkMode() {
-    setMode(
-        !mode
-    )
+    setMode(!mode)
 
-    const app = document
-    .getElementById('App')
-    const header = document
-    .getElementById('header')
+    const app = document.getElementById('App')
 
     app.classList.toggle('dark')
   }

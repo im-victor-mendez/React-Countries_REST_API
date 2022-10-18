@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { v4 as key } from "uuid";
-import { setFilter } from '../stateManagement/filterSlice';
+import { setFilter } from '../../stateManagement/filterSlice';
 
 
 function Filter({filters}) {

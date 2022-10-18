@@ -1,8 +1,8 @@
-import '../../styles/Filters.scss'
+import '../../styles/components/layouts/Filters.scss'
 import React, { useEffect } from 'react'
 import { apiAllCountries } from '../../utils/apiFunctions'
-import Filter from '../Filter'
-import Search from '../Search'
+import Filter from '../common/Filter'
+import Search from '../common/Search'
 
 var filters = []
 
