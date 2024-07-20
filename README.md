@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/im-victor-mendez/React-Countries_REST_API)
-- Live Site URL: [Netlify](https://visionary-licorice-fe0c5e.netlify.app/)
+- Live Site URL: [Netlify](https://rest-country-im-victor-mendez.netlify.app/)
 
 ## My process
 
